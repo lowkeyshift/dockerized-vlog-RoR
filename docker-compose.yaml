@@ -1,6 +1,25 @@
 version: '3.1'
 
 services:
+  agent:
+    image: datadog/agent:latest
+    container_name: agent
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - /opt/datadog-agent/run:/opt/datadog-agent/run:rw
+      - /proc/mounts:/host/proc/mounts:ro
+      - /sys/fs/cgroup:/host/sys/fs/cgroup:ro
+    environment:
+      - DD_API_KEY=
+      - DD_LOGS_ENABLED=true
+      #- DD_APM_ANALYZED_SPANS=node-express|express.request=1
+      - DD_PROCESS_AGENT_ENABLED=true
+      - DD_HOSTNAME=ruby-app
+      - DD_LOG_LEVEL=trace
+      - DD_APM_ENABLED=true
+      - SD_BACKEND=docker
+      - NON_LOCAL_TRAFFIC=true
+      - MAX_TRACES_PER_SECOND=1
   ruby-app:
     build:
       context: ./dockerfiles/
