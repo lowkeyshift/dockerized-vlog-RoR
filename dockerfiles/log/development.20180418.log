@@ -1,0 +1,2180 @@
+[2018-04-17T13:10:32] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:10:59] FATAL Rails :   
+[2018-04-17T13:10:59] FATAL Rails : PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+[2018-04-17T13:10:59] FATAL Rails :   
+[2018-04-17T13:10:59] FATAL Rails : activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:13:19] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:13:26] FATAL Rails :   
+[2018-04-17T13:13:26] FATAL Rails : PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+[2018-04-17T13:13:26] FATAL Rails :   
+[2018-04-17T13:13:26] FATAL Rails : activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:13:31] FATAL Rails :   
+[2018-04-17T13:13:31] FATAL Rails : PG::ConnectionBad (could not connect to server: Connection refused
+	Is the server running on host "localhost" (::1) and accepting
+	TCP/IP connections on port 5432?
+could not connect to server: Connection refused
+	Is the server running on host "localhost" (127.0.0.1) and accepting
+	TCP/IP connections on port 5432?
+):
+[2018-04-17T13:13:31] FATAL Rails :   
+[2018-04-17T13:13:31] FATAL Rails : activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:22:12] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:22:18] FATAL Rails :   
+[2018-04-17T13:22:18] FATAL Rails : ActiveRecord::NoDatabaseError (FATAL:  database "datadog_apm_db" does not exist
+):
+[2018-04-17T13:22:18] FATAL Rails :   
+[2018-04-17T13:22:18] FATAL Rails : activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:675:in `rescue in connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:671:in `connect'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:217:in `initialize'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `new'
+activerecord (5.0.2) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:729:in `new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:773:in `checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:752:in `try_to_checkout_new_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:713:in `acquire_connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:490:in `checkout'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:364:in `connection'
+activerecord (5.0.2) lib/active_record/connection_adapters/abstract/connection_pool.rb:883:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:128:in `retrieve_connection'
+activerecord (5.0.2) lib/active_record/connection_handling.rb:91:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:559:in `connection'
+activerecord (5.0.2) lib/active_record/migration.rb:546:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:23:11] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (11.6ms)  CREATE TABLE "schema_migrations" ("version" character varying PRIMARY KEY)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (7.8ms)  CREATE TABLE "ar_internal_metadata" ("key" character varying PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.5ms)  SELECT pg_try_advisory_lock(2313562749044519490);
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.0ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T13:23:11] INFO  ActiveRecord::Base : Migrating to CreateVideos (20160507203029)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.6ms)  BEGIN
+[2018-04-17T13:23:11] WARN  Rails : DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateVideos < ActiveRecord::Migration[4.2] (called from load at /Users/edwincarrasquillo/.rvm/gems/ruby-2.4.1/bin/rake:23)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (7.7ms)  CREATE TABLE "videos" ("id" serial primary key, "wistia" character varying, "description" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   SQL (0.7ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["version", "20160507203029"]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (1.2ms)  COMMIT
+[2018-04-17T13:23:11] INFO  ActiveRecord::Base : Migrating to AddTitleToVideos (20160508114307)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.4ms)  BEGIN
+[2018-04-17T13:23:11] WARN  Rails : DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class AddTitleToVideos < ActiveRecord::Migration[4.2] (called from load at /Users/edwincarrasquillo/.rvm/gems/ruby-2.4.1/bin/rake:23)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.6ms)  ALTER TABLE "videos" ADD "title" character varying
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   SQL (0.5ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["version", "20160508114307"]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (1.0ms)  COMMIT
+[2018-04-17T13:23:11] INFO  ActiveRecord::Base : Migrating to CreatePosts (20160523050446)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.3ms)  BEGIN
+[2018-04-17T13:23:11] WARN  Rails : DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreatePosts < ActiveRecord::Migration[4.2] (called from load at /Users/edwincarrasquillo/.rvm/gems/ruby-2.4.1/bin/rake:23)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (6.6ms)  CREATE TABLE "posts" ("id" serial primary key, "title" character varying, "body" text, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   SQL (0.8ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["version", "20160523050446"]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (1.9ms)  COMMIT
+[2018-04-17T13:23:11] INFO  ActiveRecord::Base : Migrating to CreateComments (20160523074852)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.6ms)  BEGIN
+[2018-04-17T13:23:11] WARN  Rails : DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class CreateComments < ActiveRecord::Migration[4.2] (called from load at /Users/edwincarrasquillo/.rvm/gems/ruby-2.4.1/bin/rake:23)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (8.1ms)  CREATE TABLE "comments" ("id" serial primary key, "name" character varying, "body" text, "post_id" integer, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL, CONSTRAINT "fk_rails_2fd19c0db7"
+FOREIGN KEY ("post_id")
+  REFERENCES "posts" ("id")
+)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (4.4ms)  CREATE  INDEX  "index_comments_on_post_id" ON "comments"  ("post_id")
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   SQL (0.9ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["version", "20160523074852"]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (1.3ms)  COMMIT
+[2018-04-17T13:23:11] INFO  ActiveRecord::Base : Migrating to DeviseCreateUsers (20160523092133)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.4ms)  BEGIN
+[2018-04-17T13:23:11] WARN  Rails : DEPRECATION WARNING: Directly inheriting from ActiveRecord::Migration is deprecated. Please specify the Rails release the migration was written for:
+
+  class DeviseCreateUsers < ActiveRecord::Migration[4.2] (called from load at /Users/edwincarrasquillo/.rvm/gems/ruby-2.4.1/bin/rake:23)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (5.7ms)  CREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (2.4ms)  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (2.3ms)  CREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   SQL (0.4ms)  INSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"  [["version", "20160523092133"]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (1.0ms)  COMMIT
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   ActiveRecord::InternalMetadata Load (0.5ms)  SELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2  [["key", :environment], ["LIMIT", 1]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.4ms)  BEGIN
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   SQL (0.6ms)  INSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"  [["key", "environment"], ["value", "development"], ["created_at", 2018-04-17 17:23:11 UTC], ["updated_at", 2018-04-17 17:23:11 UTC]]
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (1.2ms)  COMMIT
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :    (0.5ms)  SELECT pg_advisory_unlock(2313562749044519490)
+[2018-04-17T13:23:11] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.5ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T13:23:17] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:23:25] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T13:23:25] DEBUG ActiveRecord::Base :   Video Load (1.2ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T13:23:25] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.59.dylib\n  Referenced from: /usr/local/bin/node\n  Reason: image not found\n","duration":251.18,"view":0.0,"db":2.58,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:23:25] FATAL Rails :   
+[2018-04-17T13:23:25] FATAL Rails : ActionView::Template::Error (dyld: Library not loaded: /usr/local/opt/icu4c/lib/libicui18n.59.dylib
+  Referenced from: /usr/local/bin/node
+  Reason: image not found
+):
+[2018-04-17T13:23:25] FATAL Rails :     2: <html>
+    3: <head>
+    4:   <title>Datadog: Tutorials</title>
+    5:   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    6:   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    7:   <%= csrf_meta_tags %>
+    8:   <!-- Compiled and minified CSS -->
+[2018-04-17T13:23:25] FATAL Rails :   
+[2018-04-17T13:23:25] FATAL Rails : app/views/layouts/application.html.erb:5:in `_app_views_layouts_application_html_erb___781375207482903164_70167586064740'
+[2018-04-17T13:25:02] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:25:07] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.2ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T13:25:07] DEBUG ActiveRecord::Base :   Video Load (1.3ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T13:25:07] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":568.44,"view":556.37,"db":2.55,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:27:02] FATAL Rails :   
+[2018-04-17T13:27:02] FATAL Rails : LoadError (Unable to autoload constant YtApiController, expected /Users/edwincarrasquillo/Personal_Repo/vlog_app/app/controllers/yt_api_controller.rb to define it):
+[2018-04-17T13:27:02] FATAL Rails :   
+[2018-04-17T13:27:02] FATAL Rails : activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:28:40] FATAL Rails :   
+[2018-04-17T13:28:40] FATAL Rails : LoadError (Unable to autoload constant YtApiController, expected /Users/edwincarrasquillo/Personal_Repo/vlog_app/app/controllers/yt_api_controller.rb to define it):
+[2018-04-17T13:28:40] FATAL Rails :   
+[2018-04-17T13:28:40] FATAL Rails : activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:29:27] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T13:29:35] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.9ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T13:29:35] FATAL Rails :   
+[2018-04-17T13:29:35] FATAL Rails : ActionController::RoutingError (No route matches [GET] "/ytapi"):
+[2018-04-17T13:29:35] FATAL Rails :   
+[2018-04-17T13:29:35] FATAL Rails : actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:29:43] FATAL Rails :   
+[2018-04-17T13:29:43] FATAL Rails : LoadError (Unable to autoload constant YtApiController, expected /Users/edwincarrasquillo/Personal_Repo/vlog_app/app/controllers/yt_api_controller.rb to define it):
+[2018-04-17T13:29:43] FATAL Rails :   
+[2018-04-17T13:29:43] FATAL Rails : activesupport (5.0.2) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+activesupport (5.0.2) lib/active_support/dependencies.rb:203:in `const_missing'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+activesupport (5.0.2) lib/active_support/dependencies.rb:583:in `get'
+activesupport (5.0.2) lib/active_support/dependencies.rb:614:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:30:04] INFO  Rails : <Hash> {"method":"GET","path":"/yt_api","format":"html","controller":"YtApiController","action":"index","status":406,"error":"ActionController::UnknownFormat: YtApiController#index is missing a template for this request format and variant.\n\nrequest.formats: [\"text/html\"]\nrequest.variant: []\n\nNOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.","duration":106.67,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:30:04] FATAL Rails :   
+[2018-04-17T13:30:04] FATAL Rails : ActionController::UnknownFormat (YtApiController#index is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+[2018-04-17T13:30:04] FATAL Rails :   
+[2018-04-17T13:30:04] FATAL Rails : actionpack (5.0.2) lib/action_controller/metal/implicit_render.rb:56:in `default_render'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `block in send_action'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `tap'
+actionpack (5.0.2) lib/action_controller/metal/basic_implicit_render.rb:4:in `send_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:188:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+activesupport (5.0.2) lib/active_support/callbacks.rb:126:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:506:in `block (2 levels) in compile'
+activesupport (5.0.2) lib/active_support/callbacks.rb:455:in `call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/abstract_controller/callbacks.rb:19:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/rescue.rb:20:in `process_action'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `block in instrument'
+activesupport (5.0.2) lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+activesupport (5.0.2) lib/active_support/notifications.rb:164:in `instrument'
+actionpack (5.0.2) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/core_extensions.rb:179:in `process_action_with_datadog'
+actionpack (5.0.2) lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+activerecord (5.0.2) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+actionpack (5.0.2) lib/abstract_controller/base.rb:126:in `process'
+actionview (5.0.2) lib/action_view/rendering.rb:30:in `process'
+actionpack (5.0.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (5.0.2) lib/action_controller/metal.rb:262:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:31:04] FATAL Rails :   
+[2018-04-17T13:31:04] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T13:31:04] FATAL Rails :   
+[2018-04-17T13:31:04] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:31:10] FATAL Rails :   
+[2018-04-17T13:31:10] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T13:31:10] FATAL Rails :   
+[2018-04-17T13:31:10] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:32:00] FATAL Rails :   
+[2018-04-17T13:32:00] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T13:32:00] FATAL Rails :   
+[2018-04-17T13:32:00] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:33:03] FATAL Rails :   
+[2018-04-17T13:33:03] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T13:33:03] FATAL Rails :   
+[2018-04-17T13:33:03] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T13:33:55] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":156.82,"view":154.88,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:36:11] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":17.89,"view":16.16,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:44:16] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: No route matches {:action=\u003e\"show\", :controller=\u003e\"ytapi\"} missing required keys: [:id]","duration":30.19,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:44:16] FATAL Rails :   
+[2018-04-17T13:44:16] FATAL Rails : ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ytapi"} missing required keys: [:id]):
+[2018-04-17T13:44:16] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T13:44:16] FATAL Rails :   
+[2018-04-17T13:44:16] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__1563295579908751292_70314644045900'
+[2018-04-17T13:44:34] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined local variable or method `pages_ytapi_path' for #\u003c#\u003cClass:0x007fe6cef24b50\u003e:0x007fe6d2ef7ca0\u003e\nDid you mean?  pages_about_path","duration":52.17,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:44:34] FATAL Rails :   
+[2018-04-17T13:44:34] FATAL Rails : ActionView::Template::Error (undefined local variable or method `pages_ytapi_path' for #<#<Class:0x007fe6cef24b50>:0x007fe6d2ef7ca0>
+Did you mean?  pages_about_path):
+[2018-04-17T13:44:34] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= pages_ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T13:44:34] FATAL Rails :   
+[2018-04-17T13:44:34] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__1563295579908751292_70314678889440'
+[2018-04-17T13:44:39] DEBUG ActiveRecord::Base :   Video Load (0.8ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T13:44:39] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: undefined local variable or method `pages_ytapi_path' for #\u003c#\u003cClass:0x007fe6cfb8d2e8\u003e:0x007fe6cfb7cc68\u003e\nDid you mean?  pages_about_path","duration":70.16,"view":0.0,"db":2.12,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:44:39] FATAL Rails :   
+[2018-04-17T13:44:39] FATAL Rails : ActionView::Template::Error (undefined local variable or method `pages_ytapi_path' for #<#<Class:0x007fe6cfb8d2e8>:0x007fe6cfb7cc68>
+Did you mean?  pages_about_path):
+[2018-04-17T13:44:39] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= pages_ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T13:44:39] FATAL Rails :   
+[2018-04-17T13:44:39] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__1563295579908751292_70314647998020'
+[2018-04-17T13:46:12] DEBUG ActiveRecord::Base :   Video Load (0.7ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T13:46:12] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: No route matches {:action=\u003e\"show\", :controller=\u003e\"ytapi\"} missing required keys: [:id]","duration":21.88,"view":0.0,"db":0.74,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T13:46:12] FATAL Rails :   
+[2018-04-17T13:46:12] FATAL Rails : ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ytapi"} missing required keys: [:id]):
+[2018-04-17T13:46:12] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T13:46:12] FATAL Rails :   
+[2018-04-17T13:46:12] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb__1563295579908751292_70314649695780'
+[2018-04-17T16:32:53] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T16:32:56] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T16:32:57] DEBUG ActiveRecord::Base :   Video Load (0.9ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T16:32:57] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: No route matches {:action=\u003e\"show\", :controller=\u003e\"ytapi\"} missing required keys: [:id]","duration":215.11,"view":0.0,"db":2.22,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:32:57] FATAL Rails :   
+[2018-04-17T16:32:57] FATAL Rails : ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ytapi"} missing required keys: [:id]):
+[2018-04-17T16:32:57] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:32:57] FATAL Rails :   
+[2018-04-17T16:32:57] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352085494440'
+[2018-04-17T16:34:27] DEBUG ActiveRecord::Base :   Video Load (1.0ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T16:34:27] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: No route matches {:action=\u003e\"show\", :controller=\u003e\"ytapi\"} missing required keys: [:id]","duration":22.63,"view":0.0,"db":1.05,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:34:27] FATAL Rails :   
+[2018-04-17T16:34:27] FATAL Rails : ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ytapi"} missing required keys: [:id]):
+[2018-04-17T16:34:27] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:34:27] FATAL Rails :   
+[2018-04-17T16:34:27] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352119959580'
+[2018-04-17T16:38:07] DEBUG ActiveRecord::Base :   Video Load (1.0ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T16:38:07] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: No route matches {:action=\u003e\"show\", :controller=\u003e\"ytapi\"} missing required keys: [:id]","duration":24.04,"view":0.0,"db":2.35,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:38:07] FATAL Rails :   
+[2018-04-17T16:38:07] FATAL Rails : ActionView::Template::Error (No route matches {:action=>"show", :controller=>"ytapi"} missing required keys: [:id]):
+[2018-04-17T16:38:07] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:38:07] FATAL Rails :   
+[2018-04-17T16:38:07] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352117397160'
+[2018-04-17T16:38:15] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"NameError: uninitialized constant YtapiController::Ytapi","duration":2.23,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:38:15] FATAL Rails :   
+[2018-04-17T16:38:15] FATAL Rails : NameError (uninitialized constant YtapiController::Ytapi):
+[2018-04-17T16:38:15] FATAL Rails :   
+[2018-04-17T16:38:15] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `index'
+[2018-04-17T16:41:46] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"NameError: uninitialized constant YtapiController::Ytapi","duration":1.58,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:41:46] FATAL Rails :   
+[2018-04-17T16:41:46] FATAL Rails : NameError (uninitialized constant YtapiController::Ytapi):
+[2018-04-17T16:41:46] FATAL Rails :   
+[2018-04-17T16:41:46] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `index'
+[2018-04-17T16:42:00] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined local variable or method `pages_ytapi_path' for #\u003c#\u003cClass:0x007ff83dc32458\u003e:0x007ff83dc31260\u003e\nDid you mean?  pages_about_path","duration":52.63,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:42:00] FATAL Rails :   
+[2018-04-17T16:42:00] FATAL Rails : ActionView::Template::Error (undefined local variable or method `pages_ytapi_path' for #<#<Class:0x007ff83dc32458>:0x007ff83dc31260>
+Did you mean?  pages_about_path):
+[2018-04-17T16:42:00] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= pages_ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:42:00] FATAL Rails :   
+[2018-04-17T16:42:00] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352120078340'
+[2018-04-17T16:42:55] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined local variable or method `pages_ytapi_path' for #\u003c#\u003cClass:0x007ff83dc32458\u003e:0x007ff841da7ca8\u003e\nDid you mean?  pages_about_path","duration":67.93,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:42:55] FATAL Rails :   
+[2018-04-17T16:42:55] FATAL Rails : ActionView::Template::Error (undefined local variable or method `pages_ytapi_path' for #<#<Class:0x007ff83dc32458>:0x007ff841da7ca8>
+Did you mean?  pages_about_path):
+[2018-04-17T16:42:55] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= pages_ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:42:55] FATAL Rails :   
+[2018-04-17T16:42:55] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352116691960'
+[2018-04-17T16:47:01] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined local variable or method `pages_ytapi_path' for #\u003c#\u003cClass:0x007ff841e85490\u003e:0x007ff841e84270\u003e\nDid you mean?  pages_about_path","duration":49.58,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:47:01] FATAL Rails :   
+[2018-04-17T16:47:01] FATAL Rails : ActionView::Template::Error (undefined local variable or method `pages_ytapi_path' for #<#<Class:0x007ff841e85490>:0x007ff841e84270>
+Did you mean?  pages_about_path):
+[2018-04-17T16:47:01] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= pages_ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:47:01] FATAL Rails :   
+[2018-04-17T16:47:01] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352115963260'
+[2018-04-17T16:49:59] FATAL Rails :   
+[2018-04-17T16:49:59] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:49:59] FATAL Rails :   
+[2018-04-17T16:49:59] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:54:51] FATAL Rails :   
+[2018-04-17T16:54:51] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:54:51] FATAL Rails :   
+[2018-04-17T16:54:51] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:55:00] FATAL Rails :   
+[2018-04-17T16:55:00] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:55:00] FATAL Rails :   
+[2018-04-17T16:55:00] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:55:18] FATAL Rails :   
+[2018-04-17T16:55:18] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:55:18] FATAL Rails :   
+[2018-04-17T16:55:18] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:55:22] DEBUG ActiveRecord::Base :   Video Load (0.8ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T16:55:22] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":28.16,"view":22.05,"db":2.32,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:55:24] FATAL Rails :   
+[2018-04-17T16:55:24] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:55:24] FATAL Rails :   
+[2018-04-17T16:55:24] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:56:17] FATAL Rails :   
+[2018-04-17T16:56:17] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:56:17] FATAL Rails :   
+[2018-04-17T16:56:17] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:56:55] FATAL Rails :   
+[2018-04-17T16:56:55] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:56:55] FATAL Rails :   
+[2018-04-17T16:56:55] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:58:18] FATAL Rails :   
+[2018-04-17T16:58:18] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:58:18] FATAL Rails :   
+[2018-04-17T16:58:18] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:58:27] FATAL Rails :   
+[2018-04-17T16:58:27] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:58:27] FATAL Rails :   
+[2018-04-17T16:58:27] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:59:36] FATAL Rails :   
+[2018-04-17T16:59:36] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T16:59:36] FATAL Rails :   
+[2018-04-17T16:59:36] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T16:59:47] DEBUG ActiveRecord::Base :   Video Load (0.9ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T16:59:47] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"ActionView::Template::Error: undefined local variable or method `ytapi_ytapi_path' for #\u003c#\u003cClass:0x007ff8438e8418\u003e:0x007ff8438e2f40\u003e\nDid you mean?  ytapi_path","duration":82.53,"view":0.0,"db":2.26,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T16:59:47] FATAL Rails :   
+[2018-04-17T16:59:47] FATAL Rails : ActionView::Template::Error (undefined local variable or method `ytapi_ytapi_path' for #<#<Class:0x007ff8438e8418>:0x007ff8438e2f40>
+Did you mean?  ytapi_path):
+[2018-04-17T16:59:47] FATAL Rails :     22:           <li><a href="<%= posts_path %>"><i class="small material-icons ">library_books</i></a></li>
+    23:           <li><a href="<%= pages_about_path %>"><i class="small material-icons">perm_identity</i></a></li>
+    24:           <li><a href="<%= pages_contact_path %>"><i class="small material-icons">email</i></a></li>
+    25:           <li><a href="<%= ytapi_ytapi_path %>"><i class="small material-icons">filter_list</i></a></li>
+    26:           <% if user_signed_in? %>
+    27:           <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %></li>
+    28:           <li><%= link_to('Account', edit_user_registration_path) %></li>
+[2018-04-17T16:59:47] FATAL Rails :   
+[2018-04-17T16:59:47] FATAL Rails : app/views/layouts/application.html.erb:25:in `_app_views_layouts_application_html_erb___2139860133986189127_70352130920660'
+[2018-04-17T17:00:15] FATAL Rails :   
+[2018-04-17T17:00:15] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:00:15] FATAL Rails :   
+[2018-04-17T17:00:15] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:02:09] FATAL Rails :   
+[2018-04-17T17:02:09] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:02:09] FATAL Rails :   
+[2018-04-17T17:02:09] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:02:13] DEBUG ActiveRecord::Base :   Video Load (1.0ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T17:02:13] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"SyntaxError: /Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:25: unknown regexp options - vw\n/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:41: unknown regexp options - vw","duration":17.9,"view":0.0,"db":2.68,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:02:13] FATAL Rails :   
+[2018-04-17T17:02:13] FATAL Rails : SyntaxError (/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:25: unknown regexp options - vw
+/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:41: unknown regexp options - vw):
+[2018-04-17T17:02:13] FATAL Rails :   
+[2018-04-17T17:02:13] FATAL Rails : app/views/layouts/application.html.erb:25: unknown regexp options - vw
+app/views/layouts/application.html.erb:41: unknown regexp options - vw
+[2018-04-17T17:07:10] DEBUG ActiveRecord::Base :   Video Load (1.1ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T17:07:10] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":500,"error":"SyntaxError: /Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:25: unknown regexp options - vw\n/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:41: unknown regexp options - vw","duration":14.4,"view":0.0,"db":2.46,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:07:10] FATAL Rails :   
+[2018-04-17T17:07:10] FATAL Rails : SyntaxError (/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:25: unknown regexp options - vw
+/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/layouts/application.html.erb:41: unknown regexp options - vw):
+[2018-04-17T17:07:10] FATAL Rails :   
+[2018-04-17T17:07:10] FATAL Rails : app/views/layouts/application.html.erb:25: unknown regexp options - vw
+app/views/layouts/application.html.erb:41: unknown regexp options - vw
+[2018-04-17T17:07:28] DEBUG ActiveRecord::Base :   Video Load (0.9ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T17:07:28] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":22.9,"view":18.21,"db":0.94,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:07:32] DEBUG ActiveRecord::Base :   Video Load (1.1ms)  SELECT "videos".* FROM "videos"
+[2018-04-17T17:07:33] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":22.28,"view":19.45,"db":1.05,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:07:39] FATAL Rails :   
+[2018-04-17T17:07:39] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:07:39] FATAL Rails :   
+[2018-04-17T17:07:39] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:08:06] FATAL Rails :   
+[2018-04-17T17:08:06] FATAL Rails : ActionController::RoutingError (No route matches [GET] "/ytapi_index_path"):
+[2018-04-17T17:08:06] FATAL Rails :   
+[2018-04-17T17:08:06] FATAL Rails : actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:09:06] FATAL Rails :   
+[2018-04-17T17:09:06] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:09:06] FATAL Rails :   
+[2018-04-17T17:09:06] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:09:42] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T17:09:47] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.9ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T17:09:47] FATAL Rails :   
+[2018-04-17T17:09:47] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:09:47] FATAL Rails :   
+[2018-04-17T17:09:47] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:11:25] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T17:11:29] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.8ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T17:11:29] FATAL Rails :   
+[2018-04-17T17:11:29] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:11:29] FATAL Rails :   
+[2018-04-17T17:11:29] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:11:34] FATAL Rails :   
+[2018-04-17T17:11:34] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:11:34] FATAL Rails :   
+[2018-04-17T17:11:34] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:11:50] FATAL Rails :   
+[2018-04-17T17:11:50] FATAL Rails : ActionController::RoutingError (uninitialized constant YtapiController):
+[2018-04-17T17:11:50] FATAL Rails :   
+[2018-04-17T17:11:50] FATAL Rails : activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `const_get'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:268:in `block in constantize'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `each'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `inject'
+activesupport (5.0.2) lib/active_support/inflector/methods.rb:266:in `constantize'
+actionpack (5.0.2) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:44:in `controller'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:30:in `serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:39:in `block in serve'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `each'
+actionpack (5.0.2) lib/action_dispatch/journey/router.rb:26:in `serve'
+actionpack (5.0.2) lib/action_dispatch/routing/route_set.rb:725:in `call'
+warden (1.2.7) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.7) lib/warden/manager.rb:35:in `catch'
+warden (1.2.7) lib/warden/manager.rb:35:in `call'
+rack (2.0.4) lib/rack/etag.rb:25:in `call'
+rack (2.0.4) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.4) lib/rack/head.rb:12:in `call'
+rack (2.0.4) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.4) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/cookies.rb:613:in `call'
+activerecord (5.0.2) lib/active_record/migration.rb:553:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+activesupport (5.0.2) lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+activesupport (5.0.2) lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+activesupport (5.0.2) lib/active_support/callbacks.rb:90:in `run_callbacks'
+actionpack (5.0.2) lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+web-console (3.6.0) lib/web_console/middleware.rb:137:in `call_app'
+web-console (3.6.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.0) lib/web_console/middleware.rb:20:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rails/middlewares.rb:16:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+lograge (0.10.0) lib/lograge/rails_ext/rack/logger.rb:15:in `call_app'
+railties (5.0.2) lib/rails/rack/logger.rb:26:in `call'
+request_store (1.4.1) lib/request_store/middleware.rb:19:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/request_id.rb:24:in `call'
+rack (2.0.4) lib/rack/method_override.rb:22:in `call'
+rack (2.0.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.0.2) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.0.2) lib/action_dispatch/middleware/static.rb:136:in `call'
+rack (2.0.4) lib/rack/sendfile.rb:111:in `call'
+ddtrace (0.11.4) lib/ddtrace/contrib/rack/middlewares.rb:45:in `call'
+railties (5.0.2) lib/rails/engine.rb:522:in `call'
+rack (2.0.4) lib/rack/handler/webrick.rb:86:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:140:in `service'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/httpserver.rb:96:in `run'
+/Users/edwincarrasquillo/.rvm/rubies/ruby-2.4.1/lib/ruby/2.4.0/webrick/server.rb:290:in `block in start_thread'
+logging (2.2.2) lib/logging/diagnostic_context.rb:474:in `block in create_with_logging_context'
+[2018-04-17T17:12:27] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":182.08,"view":179.91,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:12:32] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":17.9,"view":16.22,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:12:33] INFO  Rails : <Hash> {"method":"GET","path":"/pages/contact","format":"html","controller":"PagesController","action":"contact","status":200,"duration":19.04,"view":16.64,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:12:35] INFO  Rails : <Hash> {"method":"GET","path":"/pages/contact","format":"html","controller":"PagesController","action":"contact","status":200,"duration":21.08,"view":18.15,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:12:37] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":30.46,"view":27.58,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:12:39] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":20.52,"view":18.32,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:12:41] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":21.53,"view":19.67,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:22] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":22.63,"view":18.94,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:25] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":20.26,"view":16.52,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:27] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":24.03,"view":21.62,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:28] INFO  Rails : <Hash> {"method":"GET","path":"/pages/contact","format":"html","controller":"PagesController","action":"contact","status":200,"duration":21.33,"view":18.65,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:29] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":21.31,"view":19.34,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:31] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":23.09,"view":20.41,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:52] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":20.27,"view":18.15,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:13:53] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":19.48,"view":17.5,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T17:59:06] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T17:59:13] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T17:59:13] FATAL Rails :   
+[2018-04-17T17:59:13] FATAL Rails : Gem::LoadError (google-api-client is not part of the bundle. Add it to your Gemfile.):
+[2018-04-17T17:59:13] FATAL Rails :   
+[2018-04-17T17:59:13] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T17:59:24] FATAL Rails :   
+[2018-04-17T17:59:24] FATAL Rails : LoadError (cannot load such file -- google/api_client):
+[2018-04-17T17:59:24] FATAL Rails :   
+[2018-04-17T17:59:24] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T18:01:11] FATAL Rails :   
+[2018-04-17T18:01:11] FATAL Rails : LoadError (cannot load such file -- googleauth):
+[2018-04-17T18:01:11] FATAL Rails :   
+[2018-04-17T18:01:11] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T18:02:41] FATAL Rails :   
+[2018-04-17T18:02:41] FATAL Rails : LoadError (cannot load such file -- googleauth/stores/redis_token_store):
+[2018-04-17T18:02:41] FATAL Rails :   
+[2018-04-17T18:02:41] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T18:03:20] FATAL Rails :   
+[2018-04-17T18:03:20] FATAL Rails : LoadError (cannot load such file -- trollop):
+[2018-04-17T18:03:20] FATAL Rails :   
+[2018-04-17T18:03:20] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T18:03:28] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":192.09,"view":190.18,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:41:23] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:41:33] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.9ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:41:33] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined method `each' for nil:NilClass","duration":28.87,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:41:33] FATAL Rails :   
+[2018-04-17T19:41:33] FATAL Rails : ActionView::Template::Error (undefined method `each' for nil:NilClass):
+[2018-04-17T19:41:33] FATAL Rails :     4:   <div class="col s12 m6">
+    5:     <div class="card blue-grey darken-1">
+    6:       <div class="card-content white-text">
+    7:           <% @ytapi_video.each do |ytapi_video| %>
+    8:         <span class="card-title"><%= ytapi_video.title %></span>
+    9:         <p><%= ytapi_video.description%></p>
+   10:       </div>
+[2018-04-17T19:41:33] FATAL Rails :   
+[2018-04-17T19:41:33] FATAL Rails : app/views/ytapi/index.html.erb:7:in `_app_views_ytapi_index_html_erb___812931343619847785_70206140364680'
+[2018-04-17T19:42:31] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"NameError: uninitialized constant YtapiController::VideoInfo","duration":1.36,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:42:31] FATAL Rails :   
+[2018-04-17T19:42:31] FATAL Rails : NameError (uninitialized constant YtapiController::VideoInfo):
+[2018-04-17T19:42:31] FATAL Rails :   
+[2018-04-17T19:42:31] FATAL Rails : app/controllers/ytapi_controller.rb:3:in `index'
+[2018-04-17T19:43:25] FATAL Rails :   
+[2018-04-17T19:43:25] FATAL Rails : LoadError (cannot load such file -- video_info):
+[2018-04-17T19:43:25] FATAL Rails :   
+[2018-04-17T19:43:25] FATAL Rails : app/controllers/ytapi_controller.rb:2:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T19:43:40] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:43:44] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.3ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:43:44] FATAL Rails :   
+[2018-04-17T19:43:44] FATAL Rails : LoadError (cannot load such file -- video_info):
+[2018-04-17T19:43:44] FATAL Rails :   
+[2018-04-17T19:43:44] FATAL Rails : app/controllers/ytapi_controller.rb:2:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T19:44:44] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :    (0.4ms)  SELECT pg_try_advisory_lock(2313562749044519490);
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.9ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :   ActiveRecord::InternalMetadata Load (0.8ms)  SELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2  [["key", :environment], ["LIMIT", 1]]
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :    (0.6ms)  BEGIN
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :    (0.6ms)  COMMIT
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :    (0.7ms)  SELECT pg_advisory_unlock(2313562749044519490)
+[2018-04-17T19:44:45] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.6ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:44:57] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:45:03] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.8ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:45:03] FATAL Rails :   
+[2018-04-17T19:45:03] FATAL Rails : LoadError (cannot load such file -- video_info):
+[2018-04-17T19:45:03] FATAL Rails :   
+[2018-04-17T19:45:03] FATAL Rails : app/controllers/ytapi_controller.rb:2:in `<class:YtapiController>'
+app/controllers/ytapi_controller.rb:1:in `<top (required)>'
+[2018-04-17T19:47:10] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :    (0.5ms)  SELECT pg_try_advisory_lock(2313562749044519490);
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.0ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :   ActiveRecord::InternalMetadata Load (1.2ms)  SELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2  [["key", :environment], ["LIMIT", 1]]
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :    (0.6ms)  BEGIN
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :    (0.5ms)  COMMIT
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :    (0.5ms)  SELECT pg_advisory_unlock(2313562749044519490)
+[2018-04-17T19:47:10] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.8ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:47:39] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :    (1.9ms)  SELECT pg_try_advisory_lock(2313562749044519490);
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :   ActiveRecord::InternalMetadata Load (1.2ms)  SELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2  [["key", :environment], ["LIMIT", 1]]
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :    (0.7ms)  BEGIN
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :    (0.4ms)  COMMIT
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :    (0.6ms)  SELECT pg_advisory_unlock(2313562749044519490)
+[2018-04-17T19:47:39] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.5ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:49:51] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-17T19:49:56] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (0.9ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-17T19:49:56] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined method `each' for #\u003cVideoInfo:0x007fbd37b66830\u003e","duration":22.21,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:49:56] FATAL Rails :   
+[2018-04-17T19:49:56] FATAL Rails : ActionView::Template::Error (undefined method `each' for #<VideoInfo:0x007fbd37b66830>):
+[2018-04-17T19:49:56] FATAL Rails :     4:   <div class="col s12 m6">
+    5:     <div class="card blue-grey darken-1">
+    6:       <div class="card-content white-text">
+    7:           <% @ytapi_video.each do |ytapi_video| %>
+    8:         <span class="card-title"><%= ytapi_video.title %></span>
+    9:         <p><%= ytapi_video.description %></p>
+   10:       </div>
+[2018-04-17T19:49:56] FATAL Rails :   
+[2018-04-17T19:49:56] FATAL Rails : app/views/ytapi/index.html.erb:7:in `_app_views_ytapi_index_html_erb__1484473703208584493_70225330091800'
+[2018-04-17T19:52:01] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"ActionView::Template::Error: undefined method `each' for #\u003cVideoInfo:0x007fbd372005c0\u003e","duration":12.87,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:52:01] FATAL Rails :   
+[2018-04-17T19:52:01] FATAL Rails : ActionView::Template::Error (undefined method `each' for #<VideoInfo:0x007fbd372005c0>):
+[2018-04-17T19:52:01] FATAL Rails :     4:   <div class="col s12 m6">
+    5:     <div class="card blue-grey darken-1">
+    6:       <div class="card-content white-text">
+    7:           <% @ytapi_video.each do |ytvideo| %>
+    8:         <span class="card-title"><%= ytvideo.title %></span>
+    9:         <p><%= ytvideo.description %></p>
+   10:       </div>
+[2018-04-17T19:52:01] FATAL Rails :   
+[2018-04-17T19:52:01] FATAL Rails : app/views/ytapi/index.html.erb:7:in `_app_views_ytapi_index_html_erb__1484473703208584493_70225325183900'
+[2018-04-17T19:52:48] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":500,"error":"SyntaxError: /Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/ytapi/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input\n          ensure\n                ^","duration":9.97,"view":0.0,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:52:48] FATAL Rails :   
+[2018-04-17T19:52:48] FATAL Rails : SyntaxError (/Users/edwincarrasquillo/Personal_Repo/vlog_app/app/views/ytapi/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+[2018-04-17T19:52:48] FATAL Rails :   
+[2018-04-17T19:52:48] FATAL Rails : app/views/ytapi/index.html.erb:18: syntax error, unexpected keyword_ensure, expecting end-of-input
+[2018-04-17T19:53:11] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":587.08,"view":578.94,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-17T19:53:23] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":423.82,"view":419.4,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:41:24] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)

@@ -1,0 +1,28 @@
+[2018-04-18T00:41:27] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.8ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-18T00:41:28] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":603.18,"view":592.43,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:44:40] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":603.49,"view":600.86,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:44:50] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":668.91,"view":666.07,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:47:48] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":577.55,"view":573.14,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:48:05] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":675.02,"view":670.76,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:48:57] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":524.47,"view":521.3,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T00:49:14] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":701.37,"view":693.56,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:25:49] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-18T08:26:03] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.4ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-18T08:26:03] DEBUG ActiveRecord::Base :   Video Load (4.3ms)  SELECT "videos".* FROM "videos"
+[2018-04-18T08:26:03] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":242.73,"view":219.44,"db":9.83,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:26:15] DEBUG ActiveRecord::Base :   Video Load (0.9ms)  SELECT "videos".* FROM "videos"
+[2018-04-18T08:26:15] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":19.74,"view":16.95,"db":0.85,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:26:16] DEBUG ActiveRecord::Base :   Post Load (9.8ms)  SELECT "posts".* FROM "posts" ORDER BY created_at DESC
+[2018-04-18T08:26:16] INFO  Rails : <Hash> {"method":"GET","path":"/posts","format":"html","controller":"PostsController","action":"index","status":200,"duration":37.5,"view":17.58,"db":10.98,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:26:17] INFO  Rails : <Hash> {"method":"GET","path":"/pages/about","format":"html","controller":"PagesController","action":"about","status":200,"duration":17.97,"view":15.37,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:26:22] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":456.54,"view":453.07,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:27:24] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":408.57,"view":406.1,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:50:32] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-18T08:50:35] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (2.0ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-18T08:50:35] DEBUG ActiveRecord::Base :   Video Load (2.0ms)  SELECT "videos".* FROM "videos"
+[2018-04-18T08:50:35] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":181.41,"view":166.45,"db":4.32,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T08:50:45] INFO  Rails : <Hash> {"method":"GET","path":"/ytapi","format":"html","controller":"YtapiController","action":"index","status":200,"duration":724.96,"view":721.6,"db":0.0,"@marker":["sourcecode","ruby","rails"]}
+[2018-04-18T09:16:12] WARN  Rails : DEPRECATION WARNING: ActiveRecord::Base.raise_in_transactional_callbacks= is deprecated, has no effect and will be removed without replacement. (called from <top (required)> at /Users/edwincarrasquillo/Personal_Repo/vlog_app/config/environment.rb:5)
+[2018-04-18T09:16:26] DEBUG ActiveRecord::Base :   ActiveRecord::SchemaMigration Load (1.1ms)  SELECT "schema_migrations".* FROM "schema_migrations"
+[2018-04-18T09:16:26] DEBUG ActiveRecord::Base :   Video Load (1.5ms)  SELECT "videos".* FROM "videos"
+[2018-04-18T09:16:26] INFO  Rails : <Hash> {"method":"GET","path":"/","format":"html","controller":"VideosController","action":"index","status":200,"duration":202.59,"view":187.97,"db":2.74,"@marker":["sourcecode","ruby","rails"]}
